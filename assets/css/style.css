@@ -20,7 +20,7 @@ body {
   .container {
     width: 100%;
     max-width: 960px;
-    margin:  auto;
+    margin: 0 auto;
     clear: both;
   }
   
@@ -115,7 +115,7 @@ body {
     height: 50px;
   }
   
-  h3, h2 {
+  h3, .sidebar, h2 {
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 22px;
@@ -126,19 +126,40 @@ body {
   
   #main-container {
     padding-top: 130px;
-    min-height: calc(100vh - 70px);
+    /* min-height: calc(100vh - 70px); */
   }
   
   .main-section {
     float: left;
     width: 100%;
-    max-width: 960px;
+    max-width: 650px;
     padding: 30px;
-    margin: 0 0 40px;
+    margin: 0 0 40px 0;
     background: #fff;
     border: 1px solid #ddd;
   }
-  
+
+  /* sidebar */
+  .sidebar {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+
+  .social:last-child {
+    margin-right: 0;
+  }
   /* portfolio page */
   
   .work {
@@ -221,24 +242,25 @@ body {
     border: 0 none;
   }
   
-  @media only screen and (max-width: 980px) {
+  @media screen and (max-width: 980px) {
    
     body {
       color: brown;
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     
     body {
       color: orange;
     }
+    
   }
 
-  @media only screen and (max-width: 640px) {
+  @media  screen and (max-width: 640px) {
     
     body {
       color: mediumseagreen;
     }
-   
+    
   }
